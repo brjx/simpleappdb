@@ -1,0 +1,9 @@
+
+# define environment variables here as a map of key: value
+env:
+
+service:
+  name: postgresql
+  type: ClusterIP
+  externalPort: 5432
+  internalPort: 5432

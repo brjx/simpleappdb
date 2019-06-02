@@ -1,0 +1,16 @@
+kind: "Endpoints"
+apiVersion: "v1"
+metadata:
+{{- if .Values.service.name }}
+  name: {{ .Values.service.name }}
+{{- else }}
+  name: {{ template "simpleappdb.fullname" . }}
+{{- end }}
+  labels:
+    chart: "{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}"
+subsets:
+  - addresses:
+      - ip: "10.62.176.3"
+    ports:
+      - name: "postgres"
+        port: {{ .Values.service.internalPort }}
