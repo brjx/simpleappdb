@@ -1,0 +1,7 @@
+apiVersion: v1
+description: simpleapp external db
+icon: https://raw.githubusercontent.com/brjx/simpleappdb/master/charts/icon128x128.png
+name: simpleappdb
+version: 0.0.1-SNAPSHOT
+sources:
+  - https://github.com/brjx/simpleappdb
