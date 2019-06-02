@@ -20,7 +20,7 @@ delete:
 
 clean:
 	rm -rf requirements.lock
-	rm -rf charts
+	rm -rf charts/*.tgz
 	rm -rf ${NAME}*.tgz
 
 release: build
