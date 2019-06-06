@@ -7,23 +7,3 @@ service:
   type: ClusterIP
   externalPort: 5432
   internalPort: 5432
-
-# Default values for prometheus-postgres-exporter.
-# This is a YAML-formatted file.
-# Declare variables to be passed into your templates.
-exporter:
-  service:
-    type: ClusterIP
-    port: 80
-    targetPort: 9187
-    name: http
-    labels: {}
-    annotations:
-      prometheus.io/scrape: true
-  config:
-    datasource:
-      host: 10.62.176.3
-      user: postgres_exporter
-      password: Ofo07iZxJKxc
-      port: "5432"
-      database: ''
