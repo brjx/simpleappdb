@@ -1,5 +1,5 @@
 dependencies:
   - alias: exporter
-    name: stable/prometheus-postgres-exporter
+    name: prometheus-postgres-exporter
     repository: https://kubernetes-charts.storage.googleapis.com/
     version: 0.6.2
